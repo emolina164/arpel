@@ -1,0 +1,238 @@
+/*----------------------------------------------------
+                  Mygen - CSS File
+------------------------------------------------------*/
+
+
+/* Global
+------------------------------------------------------*/
+html,body{height:100%}
+body{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+margin:0 auto;
+padding:0;
+background-color:#FFFFFF;
+color:#353535;
+height:100%;
+}
+*{
+margin:0;
+padding:0;
+}
+*:focus{
+outline:none; /* removes ugly dotted border but may make template more unsuable, up to you
+				 if you want to keep it! */
+}
+.clr{clear:both}
+form{margin:0; padding:0;}
+hr{
+border:0;
+color:#dedede;
+background-color: #dedede;
+height: 1px;
+margin:10px 0px 6px 0px;
+padding:0px;
+}
+
+
+/* Default Element Styles
+------------------------------------------------------*/
+/* heading */
+h1, h2, h3, h4, h5{font-family:Arial, Helvetica, sans-serif; font-weight:normal; color:#515151;}
+h1{font-size:32px; line-height:30px; margin-bottom:15px;}
+h2{font-size:22px; line-height:28px; margin-bottom:5px;}
+h3{font-size:18px; line-height:20px; margin-bottom:5px;}
+h4{font-size:16px; line-height:18px; margin-bottom:5px; font-weight:bold;}
+h5{font-size:12px; margin:3px 0px; padding:0px; letter-spacing:1px;}
+
+/* links */
+a{color:#11538e; text-decoration:none;}
+a:visited{color:#11538e; text-decoration:none;}
+a:hover{color:#3282c9;}
+a img{border:none}
+.imgleft{float:left; padding:5px 12px 0px 0px;}
+.imgright{float:right; padding-left:12px;}
+
+/* lists, blockquotes and paragraphs */
+p, ul, ol, blockquote{
+font-size:12px;
+line-height:20px;
+margin-bottom:14px;
+color:#353535;
+}
+ul, ol{
+margin:10px 0 35px 40px;
+}
+li ol, li ul{
+font-size:1.0em;
+list-style:square;
+margin-bottom:0;
+margin-top:0;
+}
+li ol{list-style:decimal;}
+blockquote{
+font-style:italic;
+margin:0px;
+color:#6f6f6f;
+padding:2px 4px 2px 38px;
+background-image:url(../images/quote.gif);
+background-position:0px 5px;
+background-repeat:no-repeat;
+}
+
+/* code */
+code{
+font-family:Tahoma, Arial, Verdana;
+letter-spacing:1px;
+margin:25px 0 25px 0px;
+display:block;
+font-size:0.9em;
+border-left:4px solid #dddddd;
+padding:15px 10px;
+}
+
+
+/* Container
+------------------------------------------------------*/
+#outer-container{width:960px; margin:0px auto;}
+#main-container{width:960px; background-image:url(../images/bg-container.gif); background-repeat:repeat-y; float:left;}
+#container-left{width:70px; float:left;}
+#container-right{width:890px; float:left;}
+.inner-container{width:809px; margin:0px auto;}
+
+
+
+/* Header
+------------------------------------------------------*/
+.logo{width:70px; padding:23px 0px 0px 10px;}
+#top-content{height:39px; font-size:11px; color:#989797; padding-right:15px; float:right;}
+.top-address{float:right; padding:11px 0px; margin-right:45px;}
+.top-icon{padding-right:4px; float:left;}
+
+/* Welcome text */
+#welcome-text{margin-top:30px; float:left;}
+#welcome-text h1{font-size:60px; color:#515151; margin-bottom:0px;}
+
+/* Page title */
+#page-title{margin-top:30px; float:left;}
+#page-title h1{font-size:60px; color:#515151; margin-bottom:0px; border-bottom:3px solid #11538e;}
+
+/* Top Navigation bar menu styling */
+#nav{
+border-top:1px solid #a5a5a5;
+float:right;
+list-style-type: none;
+margin:0px 0px 0px 0px;
+}
+#nav li{
+float:left;
+border-right:1px solid #a5a5a5;
+}
+#nav li a:link, #nav li a:active, #nav li a:visited{
+display:block;
+width:100px;
+padding:4px 20px;
+text-decoration: none;
+line-height: 20px;
+outline: none;
+text-align:left;
+font-size: 18px;
+color:#7c7c7c;
+}
+#nav li a:hover, #nav li.selected a{
+color:#11538e;
+}
+span.descmenu{
+font-size:11px; 
+padding:0px 20px;
+color:#989797;
+}
+
+
+/*  Homepage Slider
+------------------------------------------------------*/
+#slideshow-container{
+width:809px;
+height:287px; 
+margin:15px 0px 0px 0px;
+float:left;
+}
+
+/* Content
+------------------------------------------------------*/
+.content{width:809px; padding:20px 0px 3px 0px; float:left;}
+.content-two{width:809px; padding:20px 0px 30px 0px; float:left;}
+.maincontent{padding-bottom:10px;}
+#content-left{width:506px; margin-right:30px; float:left;}
+#sidebox{width:263px; float:left;}
+.imgleft{float:left; padding-right:8px;}
+.imgright{float:right; padding-left:8px;}
+
+ul.content-list {margin:0px; padding:0px; list-style-type:none;}
+ul.content-list li {background-image:url(../images/arrow.gif); background-position:0px 5px; background-repeat:no-repeat; padding:0px 0px 12px 17px; line-height:18px;}
+ul.content-list li a {color:#353535; text-decoration:none;}
+ul.content-list li a:hover {text-decoration:underline;}
+
+/* Services page */
+.img-services{width:81px; height:90px; margin-top:7px; float:left;}
+#quote-container{width:400px; height:300px; padding:10px; background-color:#FFFFFF;}
+
+/* Bottom content */
+#bottom-content{border-top:1px solid #a5a5a5; width:850px; float:left;}
+#bottom-icon{width:37px; padding:0px 10px 0px 0px; margin-top:0px; float:left;}
+#newsflash{width:762px; height:38px; line-height:20px; float:left;}
+
+
+/* Portfolio
+------------------------------------------------------*/
+#portfolio{margin-top:15px;}
+.pf-box{width:249px; margin-right:31px; margin-bottom:40px; float:left;}
+.pf-box-nomargin{width:249px; margin-bottom:40px; float:left;}
+.pf-img{border:3px solid #11538e;}
+.page-portfolio{height:574px; float:left;}
+#pager-nav{list-style-type:none; margin:0px 0px 50px 0px; float:left;}
+#pager-nav li{margin-right:10px; float:left;}
+#next{width:56px; height:22px; background-image:url(../images/next.gif); background-repeat:repeat; margin-left:14px; float:left; cursor:pointer;}
+#prev{width:56px; height:22px; background-image:url(../images/prev.gif); background-repeat:repeat; float:left; cursor:pointer;}
+
+
+/* Contact
+------------------------------------------------------*/
+form{margin:0; padding:0;}
+#contactFormArea{width:480px; color:#6b6b6b; margin-bottom:20px;}
+.input{background-color: #ffffff; border:1px solid #c7c7c7; width:406px; padding:5px 5px 5px 5px; margin:0px; color:#6b6b6b;}
+.input-submit{background-image:url(../images/but-send.gif); background-repeat:no-repeat; padding:0px; margin:0px; border:0px; width:64px; height:22px; cursor:pointer; float:right; margin-right:62px;}
+.textarea{background-color: #ffffff; border:1px solid #c7c7c7; width:406px; padding:5px 5px 5px 5px; margin:0px; color:#6b6b6b;}
+.map{border:3px solid #11538e; margin-bottom:15px;}
+
+
+/* Footer
+------------------------------------------------------*/
+#footer{border-top:1px solid #a5a5a5; width:850px; height:33px; float:left;}
+.footer-text{font-size:11px; color:#868686; padding:8px 0px; float:left;}
+.footer-text a, #footer a:visited{color:#868686; text-decoration:none;}
+.footer-text a:hover{text-decoration:underline;}
+
+/* Added by EA
+------------------------------------------------------*/
+#slideshow-container {
+    overflow: hidden;
+}
+
+#slideshow1, #slideshow2, #slideshow3 {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+
+#slideshow3 { margin-right: 0; }
+
+#slideshow1 img,
+#slideshow2 img,
+#slideshow3 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* End added by EA
+

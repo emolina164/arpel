@@ -1,0 +1,30 @@
+/*----------------------------------------------------
+          Mygen - CSS - Exclusively for IE6
+------------------------------------------------------*/
+
+
+/* Container
+------------------------------------------------------*/
+#container-left{width:60px; height:300px; float:left;}
+#container-right{width:890px; float:left;}
+.inner-container{width:809px; margin:0px 0px 0px 40px;}
+.logo{width:60px; padding:23px 0px 0px 10px; float:left;}
+
+
+/* Header
+------------------------------------------------------*/
+#top-content{width:875px; height:39px; font-size:11px; color:#989797; margin-top:0px; padding-right:0px; float:right;}
+.top-address{float:right; padding:11px 0px; margin-right:36px;}
+.top-icon{padding-right:4px; float:left;}
+#nav li.selected a, #nav li.selected a:visited{color:#11538e;}
+
+
+/* Footer
+------------------------------------------------------*/
+#footer{border-top:1px solid #a5a5a5; width:850px; height:33px; float:none;}
+
+
+
+
+
+

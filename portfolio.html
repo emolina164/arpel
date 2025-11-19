@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="" />
+  <meta name="title" content="" />
+  <meta name="description" content="" />
+<title>Mygen | Minimalist Company</title>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/colorbox.css" rel="stylesheet" type="text/css" media="screen" />
+<!--[if IE 6]>    
+	<link href="css/ie6.css" rel="stylesheet" type="text/css" />    
+<![endif]-->
+<!--[if IE 7]>    
+	<style type="text/css">
+    #top-content{height:39px; font-size:11px; color:#989797; padding-right:15px; float:left;}
+	.top-address{float:right; padding:11px 0px; margin-right:45px;}
+    #pager-nav{padding:0px 0px 50px 0px;}
+    </style>
+<![endif]-->
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){				
+		$("a[rel='portfolio']").colorbox({transition:"fade"});				
+	});
+</script>
+<script src="js/jquery.cycle.all.js" type="text/javascript"></script>
+<script type="text/javascript">
+   $(function(){     
+        $('#portfolio').cycle({
+            fx:     'fade', // You can choose effect do you like, for reference : http://www.malsup.com/jquery/cycle/browser.html
+			speed:  'slow',
+			timeout: 0,
+			pager:  '#pager-nav',
+			pagerAnchorBuilder: function(idx, slide) {
+            // return sel string for existing anchor
+            return '#pager-nav li:eq(' + (idx) + ') a';
+        }			    
+        });				         
+     });
+</script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/Yanone_Kaffeesatz_300.font.js"></script>
+<script type="text/javascript">
+            Cufon.replace('h1') ('h2') ('h3') ('h4') ('#nav li a',{hover:true}) ;
+</script>  
+</head>
+<body>
+	<div id="outer-container">
+    	<div id="main-container">
+        	<!-- BEGIN HEADER -->
+        	<div id="container-left">
+            	<div class="logo"><a href="index.html"><img src="images/logo.gif" alt=""  /></a></div>                
+            </div>
+            <div id="container-right">
+            	<div id="top-content">
+                	<div class="top-address"><img src="images/phone-icon.jpg" alt="" class="top-icon" /> +621 7777 2222</div>
+                    <div class="top-address"><img src="images/email-icon.jpg" alt="" class="top-icon" /> mail@yourmail.com</div>
+                </div>
+                <div id="topmenu">
+					<ul id="nav"><!-- Top Navigation UL -->
+                        <li><a href="index.html">Home</a><span class="descmenu">welcome to mygen</span></li>
+                        <li><a href="about.html">About</a><span class="descmenu">about our company</span></li>
+                        <li><a href="services.html">Services</a><span class="descmenu">what we offers</span></li>
+                        <li class="selected"><a href="portfolio.html">Portfolio</a><span class="descmenu">our best project</span></li>
+                        <li><a href="contact.html">Contact</a><span class="descmenu">send Us an E-mail</span></li>
+        			</ul>
+				</div>
+                <div class="inner-container">
+                    <div id="page-title">
+                        <h1>OUR BEST WORK</h1><!-- change with your page title -->
+                    </div>                              
+                <!-- END OF HEADER -->
+                
+                    <!-- BEGIN CONTENT -->
+                	<div class="content">
+                    	<div id="portfolio">
+                        	<div class="page-portfolio">
+                                <div class="pf-box"><!-- portfolio 1 -->
+                                <a href="images/portfolio-big/pf-big1.jpg" rel="portfolio" title="Agivee - Corporate Theme"><img src="images/portfolio-thumb/pf-thumb1.jpg" alt="" class="pf-img" /></a>
+                                <h2>Agivee - Corporate theme</h2>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+                                </div>
+                                <div class="pf-box"><!-- portfolio 2 -->
+                                <a href="images/portfolio-big/pf-big2.jpg" rel="portfolio" title="Centita - Minimalist Theme"><img src="images/portfolio-thumb/pf-thumb2.jpg" alt="" class="pf-img" /></a>
+                                <h2>Centita - Minimalist theme</h2>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+                                </div>
+                                <div class="pf-box-nomargin"><!-- portfolio 3 -->
+                                <a href="images/portfolio-big/pf-big3.jpg" rel="portfolio" title="Devster - Simple Theme"><img src="images/portfolio-thumb/pf-thumb3.jpg" alt="" class="pf-img" /></a>
+                                <h2>Devster - Simple theme</h2>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+                                </div>
+                                <div class="pf-box"><!-- portfolio 4 -->
+                                <a href="images/portfolio-big/pf-big4.jpg" rel="portfolio" title="Avalium - Clean Theme"><img src="images/portfolio-thumb/pf-thumb4.jpg" alt="" class="pf-img" /></a>
+                                <h2>Avalium - Clean theme</h2>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+                                </div>
+                                <div class="pf-box"><!-- portfolio 5 -->
+                                <a href="images/portfolio-big/pf-big5.jpg" rel="portfolio" title="Mygen - Minimalist Theme 2"><img src="images/portfolio-thumb/pf-thumb5.jpg" alt="" class="pf-img" /></a>
+                                <h2>Mygen - Minimalist theme 2</h2>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+                                </div>
+                                <div class="pf-box-nomargin"><!-- portfolio 6 -->
+                                <a href="images/portfolio-big/pf-big6.jpg" rel="portfolio" title="Vitria - Clean Theme 2"><img src="images/portfolio-thumb/pf-thumb6.jpg" alt="" class="pf-img" /></a>
+                                <h2>Vitria - Clean theme 2</h2>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+                                </div>
+                            </div>
+                            <div class="page-portfolio">
+                                <div class="pf-box"><!-- portfolio 7 -->
+                                <a href="images/portfolio-big/pf-big7.jpg" rel="portfolio" title="Project Name 1"><img src="images/portfolio-thumb/pf-thumb7.jpg" alt="" class="pf-img" /></a>
+                                <h2>Project Name 1</h2>
+                                Expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maximeceat.
+                                </div>
+                                <div class="pf-box"><!-- portfolio 8 -->
+                                <a href="images/portfolio-big/pf-big8.jpg" rel="portfolio" title="Project Name 2"><img src="images/portfolio-thumb/pf-thumb8.jpg" alt="" class="pf-img" /></a>
+                                <h2>Project Name 2</h2>
+                                Expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maximeceat.
+                                </div>
+                                <div class="pf-box-nomargin"><!-- portfolio 9 -->
+                                <a href="images/portfolio-big/pf-big9.jpg" rel="portfolio" title="Project Name 3"><img src="images/portfolio-thumb/pf-thumb9.jpg" alt="" class="pf-img" /></a>
+                                <h2>Project Name 3</h2>
+                                Expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maximeceat.
+                                </div>
+                                <div class="pf-box"><!-- portfolio 10 -->
+                                <a href="images/portfolio-big/pf-big10.jpg" rel="portfolio" title="Project Name 4"><img src="images/portfolio-thumb/pf-thumb10.jpg" alt="" class="pf-img" /></a>
+                                <h2>Project Name 4</h2>
+                                Expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maximeceat.
+                                </div>
+                                <div class="pf-box"><!-- portfolio 11 -->
+                                <a href="images/portfolio-big/pf-big11.jpg" rel="portfolio" title="Project Name 5"><img src="images/portfolio-thumb/pf-thumb11.jpg" alt="" class="pf-img" /></a>
+                                <h2>Project Name 5</h2>
+                                Expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maximeceat.
+                                </div>
+                                <div class="pf-box-nomargin"><!-- portfolio 12 -->
+                                <a href="images/portfolio-big/pf-big12.jpg" rel="portfolio" title="Project Name 6"><img src="images/portfolio-thumb/pf-thumb12.jpg" alt="" class="pf-img" /></a>
+                                <h2>Project Name 6</h2>
+                                Expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maximeceat.
+                                </div>
+                            </div>                            
+                        </div>
+                        <ul id="pager-nav">
+                            <li><a href="#"><img src="images/prev.gif" alt="" /></a></li>
+                            <li><a href="#"><img src="images/next.gif" alt="" /></a></li>
+                    	</ul>                        
+                    </div>              
+                    <!-- END OF CONTENT -->
+                    
+                    <!-- BEGIN FOOTER -->
+                    <div id="footer">
+                    	<div class="footer-text">Copyright © 2010 Mygen.  All rights reserved. &nbsp; | &nbsp; <a href="#">Privacy Policy</a></div>
+                    </div>
+                    <!-- END OF FOOTER -->              
+                </div>           
+            </div>
+        </div>
+    </div>
+</body>
+</html>

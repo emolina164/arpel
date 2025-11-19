@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="" />
+  <meta name="title" content="" />
+  <meta name="description" content="" />
+<title>Mygen | Minimalist Company</title>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/colorbox.css" rel="stylesheet" type="text/css" media="screen" />
+<!--[if IE 6]>    
+	<link href="css/ie6.css" rel="stylesheet" type="text/css" />    
+<![endif]-->
+<!--[if IE 7]>    
+	<style type="text/css">
+    #top-content{height:39px; font-size:11px; color:#989797; padding-right:15px; float:left;}
+	.top-address{float:right; padding:11px 0px; margin-right:45px;}
+    </style>
+<![endif]-->
+<style type='text/css' media='screen,projection'>
+<!--
+fieldset { border:0;margin:0;padding:0; }
+label {  padding-right:15px; float:left; width:70px;}
+input.text{ width:290px;font:12px/12px 'courier new',courier,monospace;color:#333;padding:3px;margin:1px 0; }
+-->
+</style>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){				
+		$(".video").colorbox({iframe:true, innerWidth:400, innerHeight:300});
+	});
+</script>
+<script type="text/javascript" src="js/functionAddEvent.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+<script type="text/javascript" src="js/xmlHttp.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/Yanone_Kaffeesatz_300.font.js"></script>
+<script type="text/javascript">
+            Cufon.replace('h1') ('h2') ('h3') ('h4') ('#nav li a',{hover:true}) ;
+</script>  
+</head>
+<body>
+	<div id="outer-container">
+    	<div id="main-container">
+        	<!-- BEGIN HEADER -->
+        	<div id="container-left">
+            	<div class="logo"><a href="index.html"><img src="images/logo.gif" alt=""  /></a></div>                
+            </div>
+            <div id="container-right">
+            	<div id="top-content">
+                	<div class="top-address"><img src="images/phone-icon.jpg" alt="" class="top-icon" /> +621 7777 2222</div>
+                    <div class="top-address"><img src="images/email-icon.jpg" alt="" class="top-icon" /> mail@yourmail.com</div>
+                </div>
+                <div id="topmenu">
+					<ul id="nav"><!-- Top Navigation UL -->
+                        <li><a href="index.html">Home</a><span class="descmenu">welcome to mygen</span></li>
+                        <li><a href="about.html">About</a><span class="descmenu">about our company</span></li>
+                        <li><a href="services.html">Services</a><span class="descmenu">what we offers</span></li>
+                        <li><a href="portfolio.html">Portfolio</a><span class="descmenu">our best project</span></li>
+                        <li class="selected"><a href="contact.html">Contact</a><span class="descmenu">send Us an E-mail</span></li>
+        			</ul>
+				</div>
+                <div class="inner-container">
+                    <div id="page-title">
+                        <h1>CONTACT US</h1><!-- change with your page title -->
+                    </div>                              
+                <!-- END OF HEADER -->
+                
+                    <!-- BEGIN CONTENT -->
+                	<div class="content">
+                    	<div id="content-left">
+                        	<div class="maincontent">
+                            <h1>Have a question ?</h1>
+                            <p id="loadBar" style="display:none;">
+                            <strong>Sending Email. Hold on just a sec&#8230;</strong><br />
+                            <img src="images/loading.gif" alt="Loading..." title="Sending Email" />
+                            </p>
+                            <p id="emailSuccess" style="display:none;">
+                            <strong style="color:#e00022;">Success! Your Email has been sent.</strong>
+                            </p>
+                            <p>Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo voluptas nulla.</p>
+                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.</p>
+                                <div id="contactFormArea">
+                                    <form action="scripts/contact.php" method="post" id="cForm">
+                                        <fieldset>
+                                            <label for="posName">Name</label><br />
+                                            <input class="input" type="text" size="25" name="posName" id="posName" /><br /><br />
+                                            <label for="posEmail">Email</label><br />
+                                            <input class="input" type="text" size="25" name="posEmail" id="posEmail" /><br /><br />
+                                            <label for="posRegard">Subject</label><br />
+                                            <input class="input" type="text" size="25" name="posRegard" id="posRegard" /><br /><br />
+                                            <label for="posText">Message</label><br />
+                                            <textarea cols="50" rows="5" name="posText" id="posText" class="textarea"></textarea><br /><br />
+                                            <label for="selfCC">
+                                            <!--<input type="checkbox" name="selfCC" id="selfCC" value="send" /> Send CC to self-->
+                                            <input type="hidden" name="selfCC" id="selfCC" value="xxx" />
+                                            </label>                                                
+                                            <input class="input-submit"  type="submit" name="sendContactEmail" id="sendContactEmail" value=" " /> 
+                                        </fieldset>
+                                    </form>     
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sidebox">
+                        	<div class="maincontent">
+                            <h1>On the Map</h1>
+                            <img src="images/map.jpg" alt="" class="map" />
+                            </div>
+                        	<div class="maincontent">
+                            <h1>Detail Contact</h1>
+                            <p><img src="images/contact-icon1.gif" alt="" class="imgleft" />
+                            <strong>Office Hours</strong><br />
+							Monday through Friday<br />
+							8:00am - 6:00pm</p>
+							<p><img src="images/contact-icon2.gif" alt="" class="imgleft" />
+                            <strong>Mailing Address</strong><br />
+							15 Kuningan 54th Street, 14th Floor,<br />
+							Jakarta, DKI 10220, Indonesia</p>
+                            <p><img src="images/contact-icon3.gif" alt="" class="imgleft" />
+                            <strong>Phone and Fax</strong><br />
+							+621 7777 2222 (phone)<br />
+							+621 7777 3333 (fax)</p>
+                            </div>                            
+                        </div>
+                    </div>                    
+                    <div id="bottom-content">
+                    	<div class="content-two">
+                        	<h1>Keep Update with  Us</h1>
+                        	<div id="bottom-icon"><img src="images/bottom-icon4.gif" alt="" /></div>
+                            <div id="newsflash">
+                            Praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi. <a href="http://vimeo.com/moogaloop.swf?clip_id=8503397" class="video">Sample Video &raquo;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END OF CONTENT -->
+                    
+                    <!-- BEGIN FOOTER -->
+                    <div id="footer">
+                    	<div class="footer-text">Copyright © 2010 Mygen.  All rights reserved. &nbsp; | &nbsp; <a href="#">Privacy Policy</a></div>
+                    </div>
+                    <!-- END OF FOOTER -->                          
+                </div>           
+            </div>
+        </div>
+    </div>
+</body>
+</html>
