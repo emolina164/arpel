@@ -49,17 +49,18 @@
       padding: 16px 8px; /* menos padding = barras azules más angostas */
     }
 
-    .page-card {
-      max-width: 1320px;    /* tarjeta más ancha = menos azul a los lados */
-      width: 100%;
-      margin: 0 auto;
-      background: #fff;
-      border-radius: 24px;
-      overflow: hidden;
-      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
-      display: grid;
-      grid-template-columns: 260px minmax(0, 1fr);
-    }
+.page-card {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr); /* solo una franja azul delgada */
+}
+
 
     @media (max-width: 900px) {
       .page-card {
@@ -68,14 +69,16 @@
     }
 
     /* COLUMNA IZQUIERDA (LOGO) */
- .brand-column {
+.brand-column {
   background: var(--primary-dark);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;   /* align logo to the left */
-  justify-content: flex-start; /* push to the top */
-  padding: 24px 24px;  /* reduce padding so it hugs the top naturally */
 }
+
+.brand-column img {
+  max-width: 130px;   /* or whatever size you want */
+  height: auto;
+  margin-top: 10px;   /* moves the logo down a bit if needed */
+}
+
 
     .brand-column img {
       max-width: 100%;
@@ -115,19 +118,30 @@
 
     /* NAVBAR */
     .navbar {
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 8px;
-      margin-bottom: 18px;
-    }
+  border-bottom: 1px solid var(--border);
+  padding: 8px 0;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
 
-    .nav-inner {
-      display: flex;
-      align-items: flex-end;
-      justify-content: center; /* centra el menú */
-      gap: 28px;
-      flex-wrap: wrap;
-      text-align: center;
-    }
+.nav-header img {
+  height: 48px;       /* ajusta según prefieras */
+  width: auto;
+  display: block;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
 
     .nav-item {
       display: flex;
@@ -361,10 +375,6 @@
     <div class="page-card">
       <!-- LEFT COLUMN / BRAND -->
       <aside class="brand-column">
-        <a href="#home">
-          <!-- usa tu mismo logo -->
-          <img src="images/logoX.gif" alt="ARPEL Contratistas">
-        </a>
       </aside>
 
       <!-- RIGHT COLUMN / CONTENT -->
@@ -372,29 +382,36 @@
 
         <!-- NAVBAR -->
         <nav class="navbar">
-          <div class="nav-inner">
-            <div class="nav-item active">
-              <a href="#home" class="nav-link">Home</a>
-              <span class="nav-desc">bienvenido a Arpel</span>
-            </div>
-            <div class="nav-item">
-              <a href="#acerca" class="nav-link">Acerca</a>
-              <span class="nav-desc">acerca de la empresa</span>
-            </div>
-            <div class="nav-item">
-              <a href="#servicios" class="nav-link">Servicios</a>
-              <span class="nav-desc">nuestros servicios</span>
-            </div>
-            <div class="nav-item">
-              <a href="#obras" class="nav-link">Obras</a>
-              <span class="nav-desc">nuestros proyectos</span>
-            </div>
-            <div class="nav-item">
-              <a href="#contacto" class="nav-link">Contacto</a>
-              <span class="nav-desc">email</span>
-            </div>
-          </div>
-        </nav>
+  <div class="nav-header">
+    <a href="#home" class="logo-link">
+      <img src="images/arpel_logo25.png" alt="ARPEL Contratistas">
+    </a>
+  </div>
+
+  <div class="nav-inner">
+    <div class="nav-item active">
+      <a href="#home" class="nav-link">Home</a>
+      <span class="nav-desc">bienvenido a Arpel</span>
+    </div>
+    <div class="nav-item">
+      <a href="#acerca" class="nav-link">Acerca</a>
+      <span class="nav-desc">acerca de la empresa</span>
+    </div>
+    <div class="nav-item">
+      <a href="#servicios" class="nav-link">Servicios</a>
+      <span class="nav-desc">nuestros servicios</span>
+    </div>
+    <div class="nav-item">
+      <a href="#obras" class="nav-link">Obras</a>
+      <span class="nav-desc">nuestros proyectos</span>
+    </div>
+    <div class="nav-item">
+      <a href="#contacto" class="nav-link">Contacto</a>
+      <span class="nav-desc">email</span>
+    </div>
+  </div>
+</nav>
+
 
         <!-- HERO -->
         <section class="hero">
